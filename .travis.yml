@@ -1,7 +1,7 @@
 language: erlang
-notifications:
-  email: false
+script: "make travis"
 otp_release:
-  - R14B03
-  - R14B02
-  - R14B01
+  - 23.0
+  - 22.0
+  - 21.3
+before_script: "sudo apt-get --yes --force-yes install libpam-runtime"
